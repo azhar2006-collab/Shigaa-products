@@ -125,6 +125,13 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
 .shigaa-site .sg-product-add:hover{transform:translateY(-2px);border-color:#00a3e4;background:#e2f3f3}
 .shigaa-site .sg-collection-card{display:flex;flex-direction:column}
 .shigaa-site .sg-collection-photo{width:100%}
+/* Featured product photography that shows both the original carton and bottle. */
+.shigaa-site .sg-main-product.sg-is-pair{width:100%;height:94%;aspect-ratio:1;object-fit:contain;clip-path:none;mix-blend-mode:multiply;filter:none;transform:rotate(-4deg)}
+@media(max-width:700px){
+  .shigaa-site .sg-selectors{overflow-x:auto;overflow-y:hidden;padding:2px 0 10px;scroll-snap-type:x proximity;scrollbar-width:thin}
+  .shigaa-site .sg-selector{flex:0 0 108px;scroll-snap-align:start}
+  .shigaa-site .sg-main-product.sg-is-pair{height:90%;transform:rotate(-2deg)}
+}
 body.sg-cart-open{overflow:hidden}
 @media(max-width:700px){
   .shigaa-site .sg-cart-layer{grid-template-columns:minmax(0,1fr)}

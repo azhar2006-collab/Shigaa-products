@@ -11,12 +11,14 @@
   const pointer = window.matchMedia('(hover: hover) and (pointer: fine) and (min-width: 1101px)');
   const mobile = window.matchMedia('(max-width: 700px)');
   const assetURL = new URL('assets/', document.currentScript?.src || location.href);
-  // Editorial descriptions summarize ingredients on the exact source pages.
-  // Prices checked 2026-11-23; original packaging files are unmodified.
+  // Product names, prices and sizes follow the source catalog and supplied product images.
+  // The two screenshot-supplied product photos are cropped for this site, not retouched.
   const products = [
     {id:'107',name:'Refoll Hair Growth Oil', title:'Refoll Hair <br>Growth Oil', category:'HAIR CARE · 100 ML', price:150, previous:200, description:'A herbal hair oil with hibiscus, amla, sesame oil and coconut oil.', image:'refoll-28.jpg', alt:'Original SHIGAA Refoll Hair Growth Oil bottle', aura:'#a9d9d4', warm:'#e7e7c9', kind:'bottle'},
     {id:'97',name:'Facial Pack', title:'Facial <br>Pack', category:'BEAUTY CARE · 100 GM', price:250, previous:350, description:'A herbal facial pack with multani mitti, kasturi manjal, beetroot and carrot.', image:'product-97.jpg', alt:'Original SHIGAA Shine Facial Pack jar', aura:'#d8dbb2', warm:'#ecddbd', kind:'jar'},
-    {id:'98',name:'Face Glow Cream', title:'Face Glow <br>Cream', category:'BEAUTY CARE · CREAM', price:170, previous:250, description:'A Siddha-based face cream with aloe vera and vitamin E, for your daily care ritual.', image:'product-98.jpg', alt:'Original SHIGAA Face Glow Cream jar', aura:'#c4d9c4', warm:'#e9dfc3', kind:'jar'}
+    {id:'98',name:'Face Glow Cream', title:'Face Glow <br>Cream', category:'BEAUTY CARE · CREAM', price:170, previous:250, description:'A Siddha-based face cream with aloe vera and vitamin E, for your daily care ritual.', image:'product-98.jpg', alt:'Original SHIGAA Face Glow Cream jar', aura:'#c4d9c4', warm:'#e9dfc3', kind:'jar'},
+    {id:'anti-dandruff',name:'Shigaa Anti Dandruff Oil', title:'Anti Dandruff <br>Oil', category:'HAIR CARE · 100 ML', price:150, previous:200, description:'A 100 ml herbal scalp oil in SHIGAA Special pink packaging.', image:'product-anti-dandruff.jpg', alt:'Shigaa Special Anti Dandruff Oil carton and bottle, 100 ml, pink packaging', aura:'#e8afc0', warm:'#f3dce0', kind:'pair'},
+    {id:'anti-lice',name:'Anti Lice Oil', title:'Anti Lice <br>Oil', category:'HAIR CARE · 100 ML', price:150, previous:200, description:'A 100 ml herbal scalp oil with a two-year shelf life from manufacture.', image:'product-anti-lice.jpg', alt:'Shigaa New Anti Lice and Dandruff Oil carton and bottle, 100 ml, blue packaging', aura:'#a9cde8', warm:'#dce9f2', kind:'pair'}
   ];
   const selectors = $$('.sg-selector');
   const imageEl = $('.sg-main-product');
@@ -44,6 +46,7 @@
     imageEl.height = p.kind === 'bottle' ? 1400 : 600;
     imageEl.classList.toggle('sg-is-bottle', p.kind === 'bottle');
     imageEl.classList.toggle('sg-is-jar', p.kind === 'jar');
+    imageEl.classList.toggle('sg-is-pair', p.kind === 'pair');
     $('.sg-product-category').textContent = p.category;
     $('.sg-product-title').innerHTML = p.title.split(/\s*<br>\s*/).map(line => `<span>${line}</span>`).join(' '); // static, authored data only
     $('.sg-product-description').textContent = p.description;

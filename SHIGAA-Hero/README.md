@@ -29,8 +29,8 @@ Brand variables live on `.shigaa-site`. `--sg-brand: #00a3e4` is sampled from th
 ## Behavior and accessibility
 
 - Two-second preloader and staggered GSAP entrance with the requested timing offsets.
-- Three manual product selectors, with no automatic carousel advance.
-- Product buttons add items to an on-site bag. Quantities, removals, subtotal and cart count update immediately; cart contents persist in the browser.
+- Five manual product selectors, including the two newly added 100 ml oils, with no automatic carousel advance.
+- Product buttons add any of the five products to an on-site bag. Quantities, removals, subtotal and cart count update immediately; cart contents persist in the browser. The mobile collection retains a two-column card grid.
 - The bag includes a responsive delivery-details form with required-field and format validation.
 - This static preview does not transmit orders or process payments. Connect a trusted order and payment service before accepting purchases.
 - Current product fades out; next image enters with perspective, while details and the atmospheric colors update.

@@ -1,14 +1,16 @@
 # Source and asset record
 
-Verified on 23 November 2026 using SHIGAA's original website and downloaded product-page HTML.
+Existing catalog prices were verified on 23 November 2026 using SHIGAA's original website and downloaded product-page HTML. The two new oil names, sizes and prices are transcribed from the product screenshots supplied for this update.
 
-| Product | Size shown by source | Current listed price | Crossed-out price | Canonical destination |
+| Product | Size shown | Listed price | Crossed-out price | Source |
 | --- | --- | --- | --- | --- |
 | Shigaa Refoll Hair Growth Oil | 100 ml | ₹150 | ₹200 | https://shigaa.com/product.php?id=107 |
 | Facial Pack | 100 gm | ₹250 | ₹350 | https://shigaa.com/product.php?id=97 |
 | Face Glow Cream | No size specified on the product page | ₹170 | ₹250 | https://shigaa.com/product.php?id=98 |
+| Shigaa Anti Dandruff Oil | 100 ml | ₹150 | ₹200 | Product screenshot supplied by the site owner |
+| Anti Lice Oil | 100 ml | ₹150 | ₹200 | Product screenshot supplied by the site owner |
 
-Descriptions summarize the source ingredient lists: hibiscus, amla, sesame and coconut oils for Refoll; multani mitti, kasturi manjal, beetroot and carrot for Facial Pack; aloe vera and vitamin E for Face Glow Cream. They do not add new efficacy claims. Hair/beauty categories follow the source catalog navigation. The founder attribution comes from https://shigaa.com/index.php and the story destination is https://shigaa.com/about.php.
+Descriptions for the first three products summarize the source ingredient lists: hibiscus, amla, sesame and coconut oils for Refoll; multani mitti, kasturi manjal, beetroot and carrot for Facial Pack; aloe vera and vitamin E for Face Glow Cream. The two new display descriptions identify the 100 ml size and packaging without adding ingredient claims. Hair/beauty categories follow the source catalog navigation. The founder attribution comes from https://shigaa.com/index.php and the story destination is https://shigaa.com/about.php.
 
 ## Original brand and product imagery
 
@@ -17,6 +19,8 @@ Descriptions summarize the source ingredient lists: hibiscus, amla, sesame and c
 - `assets/product-107.jpg`: https://shigaa.com/assets/uploads/product-featured-107.jpg
 - `assets/product-97.jpg`: https://shigaa.com/assets/uploads/product-featured-97.jpg
 - `assets/product-98.jpg`: https://shigaa.com/assets/uploads/product-featured-98.jpg
+- assets/product-anti-dandruff.jpg: product-only crop from the pink SHIGAA Special Anti Dandruff Oil screenshot supplied for this update.
+- assets/product-anti-lice.jpg: product-only crop from the blue SHIGAA New Anti Lice Oil screenshot supplied for this update.
 
 These files preserve the downloaded original bytes. The hero uses SVG presentation masks and ordinary CSS transforms to exclude the white photographic backdrop, float the products and cast soft shadows. Packaging, label artwork and proportions have not been regenerated, recolored or redesigned. Product thumbnails and the collection use the original photographs. Botanical SVG illustrations are decorative, not ingredient or certification claims.
 
