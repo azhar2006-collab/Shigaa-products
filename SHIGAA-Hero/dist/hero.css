@@ -59,9 +59,9 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
 
 /* Professional blue storefront treatment for the lead purchase moment. */
 .shigaa-site .sg-hero{--sg-aura:#b9eaff;--sg-warm:#e1f4fc;color:#102f4c}
-.shigaa-site .sg-backdrop{background:linear-gradient(118deg,#f6f0e3 0%,#eee5d2 49%,#e5d8bd 100%)}
+.shigaa-site .sg-backdrop{background:linear-gradient(118deg,#ffffff 0%,#f4fbff 32%,#eaf7ff 69%,#deeffb 100%)}
 .shigaa-site .sg-ambient-blue{background:radial-gradient(ellipse,#b5e8ff,var(--sg-aura) 40%,transparent 72%);opacity:.72}
-.shigaa-site .sg-ambient-warm{background:radial-gradient(ellipse,#fff9eb 0%,#dfcca6 50%,transparent 73%);opacity:.7}
+.shigaa-site .sg-ambient-warm{background:radial-gradient(ellipse,#ffffff 0%,#d9f1ff 50%,transparent 73%);opacity:.7}
 .shigaa-site .sg-ghost-branch{color:#116a9b;opacity:.055}
 .shigaa-site .sg-background-word{color:#116a9b;opacity:.035}
 .shigaa-site .sg-eyebrow{color:#315973}
@@ -110,7 +110,7 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
   .shigaa-site .sg-product-title{font-size:36px}
 }
 @media(max-width:700px){
-  .shigaa-site .sg-backdrop{background:linear-gradient(155deg,#f6f0e3 0%,#eee5d2 58%,#e5d8bd 100%)}
+  .shigaa-site .sg-backdrop{background:linear-gradient(155deg,#ffffff 0%,#f1faff 46%,#e4f3fc 100%)}
   .shigaa-site .sg-description{max-width:360px;color:#4e6b7e}
   .shigaa-site .sg-product-card{border-radius:24px;background:#ffffffed;box-shadow:0 16px 38px #184d6718}
   .shigaa-site .sg-price-row{max-width:100px;column-gap:5px}
