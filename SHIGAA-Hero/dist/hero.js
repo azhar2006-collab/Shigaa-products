@@ -53,6 +53,8 @@
     $('.sg-product-price').textContent = money(p.price);
     $('.sg-product-old-price').textContent = money(p.previous);
     $('.sg-product-old-price').setAttribute('aria-label', `Previous price ${p.previous} rupees`);
+    const saving = Math.max(0, Math.round((p.previous - p.price) / p.previous * 100));
+    $('[data-savings]').textContent = `${saving}% OFF`;
     $('#sg-add-active').dataset.cartAdd = p.id;
     $('#sg-add-active').setAttribute('aria-label', `Add ${p.name} to your bag for ${money(p.price)}`);
     updateTabs();
@@ -309,3 +311,4 @@
   document.addEventListener('click',event=>{if(!nav?.contains(event.target)&&!menuButton?.contains(event.target))closeMenu();});
   mobile.addEventListener('change',()=>{if(!mobile.matches)closeMenu();});
 })();
+
