@@ -120,6 +120,76 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
 }
 @media(prefers-reduced-motion:reduce){.shigaa-site .sg-button,.shigaa-site .sg-shop-link{transition:none}}
 
+/* Carry the ice-blue and white brand palette through every storefront section. */
+.shigaa-site{
+  --sg-brand:#00a3e4;
+  --sg-brand-deep:#0876a8;
+  --sg-ink:#173a56;
+  --sg-muted:#58758b;
+  --sg-cream:#f5fbff;
+  --sg-border:rgba(44,119,163,.18);
+  background:#fff;
+  color:var(--sg-ink);
+}
+.shigaa-site .sg-preloader{background:#edf8ff}
+.shigaa-site .sg-preloader>span{color:#416d88}
+.shigaa-site .sg-loading-track{background:#c8e5f4}
+.shigaa-site .sg-header{background:#fff;border-color:#dceef7}
+.shigaa-site .sg-header-link svg{border-color:#b9d8e9}
+.shigaa-site .sg-header-link:hover svg{background:#eaf7ff}
+.shigaa-site .sg-navigation{background:#fff;border-color:#dceef7;box-shadow:0 20px 25px #17496712}
+.shigaa-site .sg-backdrop{background:linear-gradient(118deg,#fff 0%,#f5fbff 38%,#e8f6ff 100%)}
+.shigaa-site .sg-ambient-blue{background:radial-gradient(ellipse,#b9eaff,#dff4ff 44%,transparent 74%)}
+.shigaa-site .sg-ambient-warm{background:radial-gradient(ellipse,#fff 0%,#dff4ff 52%,transparent 74%)}
+.shigaa-site .sg-background-word{color:#1679aa}
+.shigaa-site .sg-ghost-branch{color:#1679aa}
+.shigaa-site .sg-product-shadow{background:#1a6e9b20}
+.shigaa-site .sg-orbit-outer::before,.shigaa-site .sg-orbit-outer::after{background:#83c9eb}
+.shigaa-site .sg-orbit-tick{background:#8dcbe7}
+.shigaa-site .sg-ritual-strip{background:#edf8ff;border-color:#d8edf8}
+.shigaa-site .sg-ritual-strip>span{background:#9bcde4}
+.shigaa-site .sg-ritual-strip p{color:#3d6883}
+.shigaa-site .sg-ritual-strip svg{color:#008ec5}
+.shigaa-site .sg-collection{background:#fff}
+.shigaa-site .sg-section-heading h2,.shigaa-site .sg-collection-card h3{color:#173a56}
+.shigaa-site .sg-section-heading h2 em,.shigaa-site .sg-story h2 em{color:#087daf}
+.shigaa-site .sg-section-heading>p{color:#58758b}
+.shigaa-site .sg-collection-card{border-color:#dceef7;background:linear-gradient(145deg,#fff 55%,#f3faff);box-shadow:0 10px 30px #17496710}
+.shigaa-site .sg-collection-card:hover{box-shadow:0 16px 36px #1749671a}
+.shigaa-site .sg-collection-photo,.shigaa-site .sg-collection-photo-pack,.shigaa-site .sg-collection-photo-cream{background:#edf8ff}
+.shigaa-site .sg-collection-photo>span{background:#ffffffed;color:#315a75;box-shadow:0 5px 18px #17496712}
+.shigaa-site .sg-collection-card>p{color:#648197}
+.shigaa-site .sg-collection-card>div:last-child>span{color:#087daf}
+.shigaa-site .sg-product-add{border-color:#b6d9eb;background:#fff;color:#0876a8}
+.shigaa-site .sg-product-add:hover{border-color:#00a3e4;background:#eaf7ff}
+.shigaa-site .sg-catalog-note{color:#5b778b}
+.shigaa-site .sg-story{background:#eaf7ff;border-color:#d7eefa}
+.shigaa-site .sg-story>div:nth-child(2)>p{color:#4e6d83}
+.shigaa-site .sg-story-link{color:#0876a8;border-color:#76bada}
+.shigaa-site .sg-footer{background:#fff;border-top:1px solid #dceef7}
+.shigaa-site .sg-footer p,.shigaa-site .sg-footer>a:last-child{color:#58758b}
+.shigaa-site .sg-cart-panel{background:#fff;box-shadow:-20px 0 60px #102f4c20}
+.shigaa-site .sg-cart-close:hover{background:#eaf7ff}
+.shigaa-site .sg-cart-empty>span{background:#eaf7ff;color:#087daf}
+.shigaa-site .sg-cart-item-image{background:#edf8ff}
+.shigaa-site .sg-cart-item-info>p,.shigaa-site .sg-cart-summary>span,.shigaa-site .sg-cart-summary>p{color:#58758b}
+.shigaa-site .sg-quantity-controls button{border-color:#c5e2f0;background:#fff;color:#174b6d}
+.shigaa-site .sg-quantity-controls button:hover{background:#eaf7ff}
+.shigaa-site .sg-checkout-form label{color:#456b84}
+.shigaa-site .sg-checkout-form input,.shigaa-site .sg-checkout-form textarea{border-color:#c7e1ef;background:#fff;color:#173a56}
+.shigaa-site .sg-checkout-form input:focus,.shigaa-site .sg-checkout-form textarea:focus{border-color:#00a3e4;box-shadow:0 0 0 3px #00a3e420}
+.shigaa-site .sg-checkout-submit{background:#008fca;color:#fff}
+.shigaa-site .sg-checkout-submit:hover{background:#0876a8}
+.shigaa-site .sg-checkout-note,.shigaa-site .sg-checkout-status{color:#58758b}
+.shigaa-site .sg-checkout-status:not(:empty){background:#eaf7ff;color:#285d7d}
+@media(max-width:700px){
+  .shigaa-site .sg-backdrop{background:linear-gradient(155deg,#fff 0%,#f1faff 48%,#e4f3fc 100%)}
+  .shigaa-site .sg-ritual-strip{background:#edf8ff}
+  .shigaa-site .sg-collection-card{background:linear-gradient(145deg,#fff,#f2f9ff)}
+  .shigaa-site .sg-story{background:#eaf7ff}
+  .shigaa-site .sg-cart-panel{background:#fff}
+}
+
 /* Editorial hero typography: keep each phrase on one line at every breakpoint. */
 .shigaa-site .sg-editorial h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(52px,5.8vw,84px);line-height:.98;letter-spacing:-.055em;font-variant-ligatures:common-ligatures}
 .shigaa-site .sg-line>span{white-space:nowrap}
