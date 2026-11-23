@@ -57,6 +57,69 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
 @media(max-width:700px){.sg-eyebrow{font-size:12px;letter-spacing:.09em}.sg-description{font-size:16px}.sg-actions{grid-template-columns:1fr;gap:10px}.sg-quiet-note{grid-column:auto;font-size:12px}.sg-selector-text{font-size:12px}.sg-selector{min-height:118px}.sg-hero-bottom{font-size:10px!important}.sg-motion-toggle{font-size:10px!important}.sg-product-category,.sg-card-heading,.sg-selector-label{font-size:11px!important}.sg-shop-link{font-size:12px!important}.sg-product-title{font-size:30px}.sg-product-description{font-size:14px}.sg-story>div:nth-child(2)>p{font-size:16px}.sg-collection-card>p{font-size:12px}.sg-collection-photo>span{font-size:12px}.sg-story-link{font-size:12px}}
 @media(max-width:360px){.sg-eyebrow{font-size:10px}.sg-product-title{font-size:27px}.sg-selector-text{font-size:11px}}
 
+/* Professional blue storefront treatment for the lead purchase moment. */
+.shigaa-site .sg-hero{--sg-aura:#b9eaff;--sg-warm:#e1f4fc;color:#102f4c}
+.shigaa-site .sg-backdrop{background:linear-gradient(118deg,#f6f0e3 0%,#eee5d2 49%,#e5d8bd 100%)}
+.shigaa-site .sg-ambient-blue{background:radial-gradient(ellipse,#b5e8ff,var(--sg-aura) 40%,transparent 72%);opacity:.72}
+.shigaa-site .sg-ambient-warm{background:radial-gradient(ellipse,#fff9eb 0%,#dfcca6 50%,transparent 73%);opacity:.7}
+.shigaa-site .sg-ghost-branch{color:#116a9b;opacity:.055}
+.shigaa-site .sg-background-word{color:#116a9b;opacity:.035}
+.shigaa-site .sg-eyebrow{color:#315973}
+.shigaa-site .sg-eyebrow>span{height:2px;width:30px;border-radius:99px;background:#00a3e4}
+.shigaa-site .sg-editorial h1{color:#123753}
+.shigaa-site .sg-word-accent{color:#008fca}
+.shigaa-site .sg-line-small{color:#395f78}
+.shigaa-site .sg-description{color:#4c687a;max-width:390px;line-height:1.8}
+.shigaa-site .sg-orbit{border-color:#368ac239}
+.shigaa-site .sg-orbit-inner{border-color:#ffffffcf}
+.shigaa-site .sg-orbit-note,.shigaa-site .sg-product-caption{color:#2777a4}
+.shigaa-site .sg-product-card{padding:25px 25px 4px;border:1px solid #d7eaf4;background:linear-gradient(145deg,#fffffffa,#f9fdffed);box-shadow:0 24px 65px #17496718,0 5px 16px #1749670c,inset 0 1px 0 #fff;backdrop-filter:blur(16px)}
+.shigaa-site .sg-product-card::before{left:25px;width:42px;height:3px;border-radius:0 0 99px 99px;background:#00a3e4}
+.shigaa-site .sg-card-heading{color:#557389;border-color:#d9e9f1}
+.shigaa-site .sg-product-category{color:#3980a4}
+.shigaa-site .sg-product-title{color:#123753}
+.shigaa-site .sg-product-description{color:#627b8b}
+.shigaa-site .sg-product-price{color:#123753}
+.shigaa-site .sg-product-old-price{color:#899da9}
+.shigaa-site .sg-price-row{gap:8px}
+.shigaa-site .sg-saving-badge{display:inline-flex;align-items:center;min-height:22px;padding:0 9px;border:1px solid #b8e8f8;border-radius:999px;background:#e8f8ff;color:#0076a8;font-size:9px;font-weight:700;letter-spacing:.06em}
+.shigaa-site .sg-shop-link{justify-content:center;gap:12px;margin-top:18px;padding:14px 18px!important;border:1px solid #008ac2;border-radius:999px;background:#008fca;color:#fff!important;box-shadow:0 9px 20px #008fca28;font-size:11px!important;font-weight:700;letter-spacing:.08em}
+.shigaa-site .sg-shop-link svg{width:19px;color:#fff}
+.shigaa-site .sg-shop-link:hover{transform:translateY(-2px);background:#0879aa;color:#fff!important;box-shadow:0 12px 25px #008fca35}
+.shigaa-site .sg-button{min-height:54px;border-radius:999px;font-size:10px;letter-spacing:.08em}
+.shigaa-site .sg-button-primary{border-color:#087daf;background:linear-gradient(115deg,#11a9df,#087daf);color:#fff!important;box-shadow:0 12px 27px #087daf2b}
+.shigaa-site .sg-button-primary:hover{background:#075f91;color:#fff!important;box-shadow:0 14px 30px #075f9133}
+.shigaa-site .sg-button-outline{border:1px solid #9dbdd0;background:#ffffff65;color:#315973!important}
+.shigaa-site .sg-button-outline:hover{background:#fff;border-color:#008fca;color:#087daf!important}
+.shigaa-site .sg-quiet-note{color:#557387}
+.shigaa-site .sg-selector-label{color:#55758a}
+.shigaa-site .sg-selector{border-radius:14px;color:#365d75}
+.shigaa-site .sg-selector:hover{background:#ffffffb0}
+.shigaa-site .sg-selector.is-active{background:#ffffffd9;box-shadow:0 7px 19px #184d6712}
+.shigaa-site .sg-selector.is-active .sg-selector-text{color:#006f9f}
+.shigaa-site .sg-thumb{border-color:#c7e2f0;background:#fff;border-radius:12px}
+.shigaa-site .sg-active-mark{background:#008fca}
+.shigaa-site .sg-scroll-line{background:#a9c6d5}
+.shigaa-site .sg-hero-bottom,.shigaa-site .sg-hero-bottom>p{color:#52758a}
+@media(min-width:1101px){
+  .shigaa-site .sg-editorial{width:38%;top:13%}
+  .shigaa-site .sg-showcase{left:34%;width:47%}
+  .shigaa-site .sg-details-wrap,.shigaa-site .sg-selector-wrap{width:265px}
+  .shigaa-site .sg-details-wrap{top:12%}
+  .shigaa-site .sg-selector-wrap{top:calc(12% + 430px)}
+  .shigaa-site .sg-product-title{font-size:36px}
+}
+@media(max-width:700px){
+  .shigaa-site .sg-backdrop{background:linear-gradient(155deg,#f6f0e3 0%,#eee5d2 58%,#e5d8bd 100%)}
+  .shigaa-site .sg-description{max-width:360px;color:#4e6b7e}
+  .shigaa-site .sg-product-card{border-radius:24px;background:#ffffffed;box-shadow:0 16px 38px #184d6718}
+  .shigaa-site .sg-price-row{max-width:100px;column-gap:5px}
+  .shigaa-site .sg-saving-badge{min-height:19px;padding-inline:7px;font-size:8px}
+  .shigaa-site .sg-shop-link{margin-top:12px}
+  .shigaa-site .sg-button-primary{box-shadow:0 8px 18px #087daf26}
+}
+@media(prefers-reduced-motion:reduce){.shigaa-site .sg-button,.shigaa-site .sg-shop-link{transition:none}}
+
 /* Editorial hero typography: keep each phrase on one line at every breakpoint. */
 .shigaa-site .sg-editorial h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(52px,5.8vw,84px);line-height:.98;letter-spacing:-.055em;font-variant-ligatures:common-ligatures}
 .shigaa-site .sg-line>span{white-space:nowrap}
@@ -146,3 +209,4 @@ body.sg-cart-open{overflow:hidden}
   .shigaa-site .sg-form-row{grid-template-columns:1fr}
   .shigaa-site .sg-cart-empty{padding:55px 8px}
 }
+
