@@ -4,6 +4,8 @@ A buildless HTML, CSS and vanilla JavaScript homepage with a cinematic SHIGAA he
 
 ## Open the website
 
+Open dist/gifting.html for the separate blue gifting-style landing page.
+
 Open `dist/index.html`, or serve `dist/` using any static web server. Deploy the contents of `dist/` to your static host. The site works with relative asset paths and does not depend on a third-party CDN at runtime.
 
 ## Files
