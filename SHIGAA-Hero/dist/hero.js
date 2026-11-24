@@ -32,7 +32,7 @@
   const motionAllowed = () => !reduced.matches && !userPaused;
   const continuousAllowed = () => motionAllowed() && inView && !document.hidden;
   const money = value => `₹${value}`;
-  const imageCache = products.map(p => {const img = new Image(); img.src = new URL(p.image, assetURL).href; return img;});
+  const imageCache = products.map(() => null);
   const updateTabs = () => {
     selectors.forEach((button, i) => {button.classList.toggle('is-active', i === active);button.setAttribute('aria-selected', String(i === active));button.tabIndex = i === active ? 0 : -1;});
     $('.sg-product-card').setAttribute('aria-labelledby', `sg-selector-${active}`);
@@ -70,7 +70,9 @@
     if (index === active) return;
     switching = true;
     $('.sg-product-card').setAttribute('aria-busy','true');
-    try {if (imageCache[index].decode) await imageCache[index].decode();} catch (_) { /* image remains an accessible original asset */ }
+    let cachedImage = imageCache[index];
+    if (!cachedImage) {cachedImage = new Image(); cachedImage.decoding = 'async'; cachedImage.src = new URL(products[index].image, assetURL).href; imageCache[index] = cachedImage;}
+    try {if (cachedImage.decode) await cachedImage.decode();} catch (_) { /* image remains an accessible original asset */ }
     const p = products[index];
     if (!gs || !motionAllowed()) {
       applyProduct(index);
@@ -285,12 +287,12 @@
     button.addEventListener('pointerleave',()=>{if(gs)gs.to(button,{x:0,y:0,duration:.55,ease:'power3.out'});});
   });
 
-  // A two-second preloader, then the specified entrance offsets.
+  // Keep entrance motion optional so the page renders immediately without GSAP.
   if (gs && motionAllowed()) {
     gs.set('.sg-backdrop',{opacity:0});
-    entrance=gs.timeline({delay:2,onComplete:()=>{loader?.remove();window.ScrollTrigger?.refresh();}});
-    entrance.to(loader,{yPercent:-101,duration:.75,ease:'expo.inOut'},0)
-      .to('.sg-backdrop',{opacity:1,duration:1.2,ease:'power3.out'},.65)
+    entrance=gs.timeline({onComplete:()=>{loader?.remove();window.ScrollTrigger?.refresh();}});
+    if(loader) entrance.to(loader,{yPercent:-101,duration:.75,ease:'expo.inOut'},0);
+    entrance.to('.sg-backdrop',{opacity:1,duration:1.2,ease:'power3.out'},.15)
       .from('.sg-editorial .sg-eyebrow',{y:18,opacity:0,duration:.9,ease:'power3.out'},.85)
       .from('.sg-line>span',{yPercent:112,opacity:0,rotation:2,duration:1.15,stagger:.1,ease:'expo.out'},1.05)
       .from('.sg-description',{y:18,opacity:0,duration:.8,ease:'power3.out'},1.35)

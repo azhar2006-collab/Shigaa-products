@@ -436,3 +436,42 @@ body.sg-cart-open{overflow:hidden}
   .shigaa-site .sg-cart-empty{padding:55px 8px}
 }
 
+/* Ice-blue product cards with real quick-add controls. */
+.shigaa-site .sg-collection{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 8% 8%,#e6f6ff 0,transparent 35%),linear-gradient(180deg,#f8fcff 0%,#fff 42%,#f1f9ff 100%)}
+.shigaa-site .sg-collection::before{content:"";position:absolute;z-index:-1;width:390px;height:390px;right:-170px;top:120px;border:1px solid #bce5f722;border-radius:50%;box-shadow:0 0 0 34px #bce5f710,0 0 0 70px #bce5f708;pointer-events:none}
+.shigaa-site .sg-section-heading h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(42px,5vw,70px);line-height:1.02}
+.shigaa-site .sg-collection-grid{gap:clamp(15px,2.2vw,30px)}
+.shigaa-site .sg-collection-card{position:relative;isolation:isolate;min-width:0;padding:12px 12px 14px;border:1px solid #d8ebf6;border-radius:27px;background:#fff;box-shadow:0 14px 36px #14557c0d;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.shigaa-site .sg-collection-card:hover{transform:translateY(-5px);border-color:#a9d8ef;box-shadow:0 22px 42px #14557c19}
+.shigaa-site .sg-collection-photo{height:auto;aspect-ratio:1 / 1.02;border-radius:20px;background:radial-gradient(ellipse at 50% 68%,#d5efff 0%,#eaf7ff 44%,#f5fbff 76%);}
+.shigaa-site .sg-collection-photo::before{content:"";position:absolute;z-index:0;width:67%;aspect-ratio:1;border:1px solid #7fc3e62e;border-radius:50%;box-shadow:0 0 0 14px #70bce512,0 0 0 30px #70bce509;pointer-events:none}
+.shigaa-site .sg-collection-photo img{position:relative;z-index:1;width:82%;height:82%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 14px 12px #14557c1a);transition:transform .45s cubic-bezier(.2,.7,.3,1)}
+.shigaa-site .sg-collection-card:hover .sg-collection-photo img{transform:translateY(-3px) scale(1.045)}
+.shigaa-site .sg-collection-photo>.sg-product-badge{position:absolute;z-index:2;top:14px;left:14px;right:auto;bottom:auto;width:max-content;max-width:calc(100% - 28px);padding:7px 10px;border:1px solid #d0e9f6;border-radius:999px;background:#ffffffdf;color:#20678e;box-shadow:0 6px 18px #14557c10;backdrop-filter:blur(10px);font:700 9px/1 var(--sg-sans);letter-spacing:.11em;opacity:1;transform:none}
+.shigaa-site .sg-collection-card>p{margin:16px 4px 0;color:#62829a;font-size:9px!important;letter-spacing:.13em}
+.shigaa-site .sg-collection-card>.sg-product-meta{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px;margin:7px 4px 0}
+.shigaa-site .sg-collection-card .sg-product-meta h3{font:500 clamp(22px,2.4vw,31px)/1.05 "Cormorant Garamond",Georgia,serif;letter-spacing:-.025em;color:#143c60}
+.shigaa-site .sg-collection-card .sg-product-meta>span{padding:5px 8px;border:1px solid #d7ebf7;border-radius:999px;background:#f2f9ff;color:#087daf;font-size:12px;font-weight:700;white-space:nowrap}
+.shigaa-site .sg-product-add{min-height:46px;margin-top:15px;padding:0 15px;border:0;border-radius:14px;background:linear-gradient(105deg,#078fc9,#0865b5);color:#fff;font-size:10px;letter-spacing:.12em;box-shadow:0 8px 18px #087daf22;transition:transform .2s,box-shadow .2s,filter .2s}
+.shigaa-site .sg-product-add svg{width:18px;height:18px}
+.shigaa-site .sg-product-add:hover{transform:translateY(-2px);background:linear-gradient(105deg,#078fc9,#0865b5);box-shadow:0 12px 23px #087daf38;filter:saturate(1.12)}
+.shigaa-site .sg-product-add:focus-visible{outline:3px solid #69c4ee;outline-offset:3px}
+@media(max-width:700px){
+  .shigaa-site .sg-collection{padding:48px 5% 42px}
+  .shigaa-site .sg-section-heading{margin-bottom:22px}
+  .shigaa-site .sg-section-heading h2{font-size:clamp(40px,11vw,52px)}
+  .shigaa-site .sg-collection-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .shigaa-site .sg-collection-card{padding:8px 8px 10px;border-radius:21px}
+  .shigaa-site .sg-collection-card:hover{transform:translateY(-2px)}
+  .shigaa-site .sg-collection-photo{aspect-ratio:1;border-radius:15px}
+  .shigaa-site .sg-collection-photo img{width:86%;height:78%}
+  .shigaa-site .sg-collection-photo>.sg-product-badge{top:8px;left:8px;max-width:calc(100% - 16px);padding:6px 7px;font-size:7px;letter-spacing:.07em}
+  .shigaa-site .sg-collection-card>p{margin:11px 2px 0;font-size:8px!important;letter-spacing:.08em}
+  .shigaa-site .sg-collection-card>.sg-product-meta{grid-template-columns:minmax(0,1fr);gap:6px;margin:5px 2px 0}
+  .shigaa-site .sg-collection-card .sg-product-meta h3{font-size:clamp(20px,5.4vw,25px);line-height:1.02;min-height:2.04em}
+  .shigaa-site .sg-collection-card .sg-product-meta>span{justify-self:start;padding:4px 7px;font-size:11px}
+  .shigaa-site .sg-product-add{min-height:41px;margin-top:11px;padding:0 10px;border-radius:12px;font-size:9px;letter-spacing:.08em}
+  .shigaa-site .sg-product-add svg{width:16px;height:16px}
+}
+@media(prefers-reduced-motion:reduce){.shigaa-site .sg-collection-card,.shigaa-site .sg-collection-photo img,.shigaa-site .sg-product-add{transition:none}}
+

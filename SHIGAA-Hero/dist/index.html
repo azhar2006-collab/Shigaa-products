@@ -8,21 +8,14 @@
   <title>SHIGAA — The Art of Natural Wellness</title>
   <link rel="icon" href="assets/logo.png">
   <link rel="preload" href="assets/cormorant-normal-400.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="assets/refoll-28.jpg" as="image">
+  <link rel="preload" href="assets/anti-lice-hero-banner.jpg" as="image" fetchpriority="high">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="hero.css">
-  <script defer src="assets/gsap.min.js"></script>
-  <script defer src="assets/ScrollTrigger.min.js"></script>
   <script defer src="hero.js"></script>
 </head>
 <body>
 <div class="shigaa-site">
   <a class="sg-skip" href="#main">Skip to content</a>
-  <div class="sg-preloader" aria-hidden="true">
-    <img src="assets/logo.png" alt="" width="150" height="78">
-    <span>A MOMENT FOR YOURSELF</span>
-    <div class="sg-loading-track"><i></i></div>
-  </div>
   <svg class="sg-svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <defs>
       <!-- Presentation masks crop only the original white photography backdrops. -->
@@ -89,7 +82,7 @@
         </div>
         <div class="sg-plant sg-plant-back" aria-hidden="true"><div class="sg-plant-parallax"><svg><use href="#sg-branch"/></svg></div></div>
         <div class="sg-product-scroll"><div class="sg-product-parallax"><div class="sg-product-float">
-          <div class="sg-product-visual" id="sg-product-visual"><img class="sg-main-product sg-is-pair" src="assets/product-anti-lice.jpg" alt="SHIGAA Anti Lice and Dandruff Oil carton and bottle" width="600" height="600" fetchpriority="high"></div>
+          <div class="sg-product-visual" id="sg-product-visual"><img class="sg-main-product sg-is-pair" src="assets/product-anti-lice.jpg" alt="SHIGAA Anti Lice and Dandruff Oil carton and bottle" width="600" height="600" loading="lazy" decoding="async"></div>
         </div></div></div>
         <div class="sg-product-shadow" aria-hidden="true"></div>
         <div class="sg-plant sg-plant-front" aria-hidden="true"><div class="sg-plant-parallax"><svg><use href="#sg-branch"/></svg></div></div>
@@ -145,11 +138,11 @@
     <section class="sg-collection" id="collection" aria-labelledby="sg-collection-title">
       <div class="sg-section-heading"><div><p class="sg-eyebrow">THE SHIGAA COLLECTION</p><h2 id="sg-collection-title">Make room for <em>your ritual.</em></h2></div><p>Little moments of care.<br>Inspired by the world around us.</p></div>
       <div class="sg-collection-grid">
-        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-oil"><img src="assets/product-107.jpg" alt="SHIGAA Refoll Hair Growth Oil with its original box" width="1500" height="1500" loading="lazy"></div><p>HAIR CARE · 100 ML</p><div><h3>Refoll Hair Growth Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="107"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
-        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-pack"><img src="assets/product-97.jpg" alt="SHIGAA Shine Facial Pack in its original jar" width="600" height="600" loading="lazy"></div><p>BEAUTY CARE · 100 GM</p><div><h3>Facial Pack</h3><span>₹250</span></div><button class="sg-product-add" type="button" data-cart-add="97"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
-        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-cream"><img src="assets/product-98.jpg" alt="SHIGAA Face Glow Cream in its original jar" width="600" height="600" loading="lazy"></div><p>BEAUTY CARE · CREAM</p><div><h3>Face Glow Cream</h3><span>₹170</span></div><button class="sg-product-add" type="button" data-cart-add="98"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
-        <article class="sg-collection-card"><div class="sg-collection-photo"><img src="assets/product-anti-dandruff.jpg" alt="Shigaa Special Anti Dandruff Oil carton and bottle in pink packaging" width="600" height="600" loading="lazy"></div><p>HAIR CARE · 100 ML</p><div><h3>Anti Dandruff Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="anti-dandruff"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
-        <article class="sg-collection-card"><div class="sg-collection-photo"><img src="assets/product-anti-lice.jpg" alt="Shigaa New Anti Lice and Dandruff Oil carton and bottle in blue packaging" width="600" height="600" loading="lazy"></div><p>HAIR CARE · 100 ML</p><div><h3>Anti Lice Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="anti-lice"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
+        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-oil"><span class="sg-product-badge">HAIR CARE</span><img src="assets/product-107.jpg" alt="SHIGAA Refoll Hair Growth Oil with its original box" width="900" height="900" loading="lazy" decoding="async"></div><p>HAIR CARE · 100 ML</p><div class="sg-product-meta"><h3>Refoll Hair Growth Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="107"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
+        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-pack"><span class="sg-product-badge">BEAUTY CARE</span><img src="assets/product-97.jpg" alt="SHIGAA Shine Facial Pack in its original jar" width="600" height="600" loading="lazy" decoding="async"></div><p>BEAUTY CARE · 100 GM</p><div class="sg-product-meta"><h3>Facial Pack</h3><span>₹250</span></div><button class="sg-product-add" type="button" data-cart-add="97"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
+        <article class="sg-collection-card"><div class="sg-collection-photo sg-collection-photo-cream"><span class="sg-product-badge">BEAUTY CARE</span><img src="assets/product-98.jpg" alt="SHIGAA Face Glow Cream in its original jar" width="600" height="600" loading="lazy" decoding="async"></div><p>BEAUTY CARE · CREAM</p><div class="sg-product-meta"><h3>Face Glow Cream</h3><span>₹170</span></div><button class="sg-product-add" type="button" data-cart-add="98"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
+        <article class="sg-collection-card"><div class="sg-collection-photo"><span class="sg-product-badge">HAIR CARE</span><img src="assets/product-anti-dandruff.jpg" alt="Shigaa Special Anti Dandruff Oil carton and bottle in pink packaging" width="600" height="600" loading="lazy" decoding="async"></div><p>HAIR CARE · 100 ML</p><div class="sg-product-meta"><h3>Anti Dandruff Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="anti-dandruff"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
+        <article class="sg-collection-card"><div class="sg-collection-photo"><span class="sg-product-badge">HAIR CARE</span><img src="assets/product-anti-lice.jpg" alt="Shigaa New Anti Lice and Dandruff Oil carton and bottle in blue packaging" width="600" height="600" loading="lazy" decoding="async"></div><p>HAIR CARE · 100 ML</p><div class="sg-product-meta"><h3>Anti Lice Oil</h3><span>₹150</span></div><button class="sg-product-add" type="button" data-cart-add="anti-lice"><span>ADD TO BAG</span><svg aria-hidden="true"><use href="#sg-bag"/></svg></button></article>
       </div>
       <p class="sg-catalog-note">Prices as listed by SHIGAA on 23 November 2026. Shipping is calculated when checkout is connected.</p>
     </section>
