@@ -26,7 +26,7 @@
   const cardContent = $('.sg-card-content');
   const loader = $('.sg-preloader');
   const floatTweens = [];
-  let active = 0, queued = null, switching = false, switchTimeline;
+  let active = 4, queued = null, switching = false, switchTimeline;
   let entrance, scrollContext, inView = true, userPaused = false, started = false, floatingReady = false, raf = 0;
   let x = 0, y = 0, targetX = 0, targetY = 0;
   const motionAllowed = () => !reduced.matches && !userPaused;
