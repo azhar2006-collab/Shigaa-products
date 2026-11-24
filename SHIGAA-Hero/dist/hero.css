@@ -313,6 +313,39 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
   .shigaa-site .sg-selector{flex-basis:90px}
 }
 
+/* Use the supplied finished banner artwork on desktop; keep live text and product controls on small screens. */
+.shigaa-site .sg-reference-banner,.shigaa-site .sg-banner-purchase{display:none}
+@media(min-width:1101px){
+  .shigaa-site .sg-hero{width:min(1780px,calc(100% - 64px));height:auto;min-height:0;aspect-ratio:1983 / 793;border-radius:36px;background:#eaf7ff}
+  .shigaa-site .sg-backdrop,.shigaa-site .sg-editorial,.shigaa-site .sg-showcase,.shigaa-site .sg-details-wrap,.shigaa-site .sg-actions,.shigaa-site .sg-selector-wrap,.shigaa-site .sg-hero-bottom{display:none!important}
+  .shigaa-site .sg-reference-banner{display:block;position:absolute;inset:0;z-index:2;overflow:hidden;border-radius:inherit}
+  .shigaa-site .sg-reference-banner img{display:block;width:100%;height:100%;object-fit:cover}
+  .shigaa-site .sg-banner-purchase{position:absolute;z-index:4;top:78%;left:52.5%;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:205px;min-height:46px;padding:0 19px;border:1px solid #073f9c;border-radius:999px;background:#064fbd;color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;box-shadow:0 10px 24px #083c8a30;transition:background .2s,transform .2s,box-shadow .2s}
+  .shigaa-site .sg-banner-purchase:hover{transform:translateY(-2px);background:#073f9c;box-shadow:0 13px 26px #083c8a3b}
+  .shigaa-site .sg-banner-purchase svg{width:18px;height:18px}
+}
+/* Keep the supplied campaign banner visible on tablets and phones too. */
+@media(max-width:1100px){
+  .shigaa-site .sg-hero{display:flex;flex-direction:column;gap:0;width:calc(100% - 32px);height:auto;min-height:0;max-height:none;aspect-ratio:auto;margin:16px auto 30px;padding:0 0 18px;border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 18px 48px #125b8b12}
+  .shigaa-site .sg-backdrop,.shigaa-site .sg-editorial,.shigaa-site .sg-showcase,.shigaa-site .sg-actions,.shigaa-site .sg-hero-bottom{display:none!important}
+  .shigaa-site .sg-reference-banner{display:block;position:relative;inset:auto;z-index:2;width:100%;aspect-ratio:1983 / 793;overflow:hidden;border-radius:inherit;flex:none;background:#eaf7ff}
+  .shigaa-site .sg-reference-banner img{display:block;width:100%;height:100%;object-fit:contain}
+  .shigaa-site .sg-banner-purchase{position:relative;inset:auto;z-index:4;display:inline-flex;align-self:center;align-items:center;justify-content:center;gap:10px;min-width:205px;min-height:46px;margin:16px auto 0;padding:0 19px;border:1px solid #073f9c;border-radius:999px;background:#064fbd;color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;box-shadow:0 10px 24px #083c8a30}
+  .shigaa-site .sg-banner-purchase svg{width:18px;height:18px}
+  .shigaa-site .sg-selector-wrap{position:relative;inset:auto;order:3;width:100%;margin:24px 0 0;padding:0 16px}
+  .shigaa-site .sg-selector-label{text-align:left;margin:0 0 12px!important;color:#174b80}
+  .shigaa-site .sg-selectors{display:flex;flex-direction:row;gap:8px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;padding:2px 1px 8px;scrollbar-width:none}
+  .shigaa-site .sg-selectors::-webkit-scrollbar{display:none}
+  .shigaa-site .sg-selector{flex:0 0 82px;min-height:0;gap:7px;padding:8px 4px!important;border:0!important;border-radius:16px;background:transparent!important;scroll-snap-align:start}
+  .shigaa-site .sg-selector.is-active{background:#edf8ff!important}
+  .shigaa-site .sg-thumb{width:58px;height:58px;border:0;background:#e9f6ff;border-radius:50%}
+  .shigaa-site .sg-selector-text{font-size:10px;text-align:center;white-space:normal}
+  .shigaa-site .sg-active-mark{display:none}
+  .shigaa-site .sg-details-wrap{position:relative;inset:auto;order:4;width:100%;margin:8px 0 0;padding:0 16px}
+  .shigaa-site .sg-product-card{padding:18px 18px 0;border:1px solid #dceefa;border-radius:20px;background:#fff}
+  .shigaa-site .sg-cart-trigger.sg-fragment-cart-trigger{top:12px;right:12px}
+}
+
 /* Editorial hero typography: keep each phrase on one line at every breakpoint. */
 .shigaa-site .sg-editorial h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(52px,5.8vw,84px);line-height:.98;letter-spacing:-.055em;font-variant-ligatures:common-ligatures}
 .shigaa-site .sg-line>span{white-space:nowrap}
