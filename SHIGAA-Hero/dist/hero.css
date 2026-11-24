@@ -190,6 +190,129 @@ html:has(.sg-motion-paused){scroll-behavior:auto}
   .shigaa-site .sg-cart-panel{background:#fff}
 }
 
+/* Rounded promotional banner inspired by the supplied SHIGAA hair-care artwork. */
+.shigaa-site .sg-hero{
+  width:min(1780px,calc(100% - 64px));
+  height:clamp(640px,49vw,800px);
+  min-height:640px;
+  max-height:none;
+  margin:30px auto 58px;
+  overflow:hidden;
+  border:1px solid #c8e6f7;
+  border-radius:38px;
+  background:#eaf7ff;
+  box-shadow:0 24px 70px #165b8418;
+}
+.shigaa-site .sg-backdrop{overflow:hidden;border-radius:inherit;background:linear-gradient(112deg,#ffffff 0%,#f4fbff 47%,#e5f5ff 100%)}
+.shigaa-site .sg-backdrop::before{
+  content:"";position:absolute;left:-18%;top:-30%;width:74%;height:112%;border:2px solid #ffffffb8;border-radius:48%;
+  background:radial-gradient(ellipse at 56% 45%,#d8f1ff 0%,#bdeaff72 43%,transparent 72%);
+  box-shadow:inset 0 0 32px #ffffff8c,0 0 35px #46b7ec30;transform:rotate(-17deg)
+}
+.shigaa-site .sg-backdrop::after{
+  content:"";position:absolute;left:-8%;bottom:5%;width:82%;height:100px;border:2px solid #ffffffd1;border-radius:50%;
+  box-shadow:0 -5px 16px #44b4e33b,0 15px 36px #1682bb2b,inset 0 9px 22px #ffffffa8;transform:rotate(5deg)
+}
+.shigaa-site .sg-editorial{left:auto;right:7%;top:14%;width:43%;z-index:5}
+.shigaa-site .sg-editorial .sg-eyebrow{color:#07569a;font-size:13px;letter-spacing:.35em;font-weight:700}
+.shigaa-site .sg-editorial h1{max-width:none;margin:30px 0 0;color:#0c285e;font-size:clamp(60px,6.2vw,104px);line-height:.86;letter-spacing:-.055em}
+.shigaa-site .sg-editorial .sg-line{overflow:visible;padding:0;margin:0}
+.shigaa-site .sg-editorial .sg-line>span{white-space:nowrap}
+.shigaa-site .sg-editorial .sg-line+.sg-line{margin-top:.1em}
+.shigaa-site .sg-editorial .sg-word-accent{color:inherit}
+.shigaa-site .sg-editorial .sg-description{margin-top:25px!important;color:#183d6b;font-size:20px;line-height:1.5;letter-spacing:.035em}
+.shigaa-site .sg-showcase{left:1%;top:0;width:49%;height:100%;z-index:3;perspective:none}
+.shigaa-site .sg-showcase::before{
+  content:"";position:absolute;z-index:1;left:14%;bottom:7%;width:68%;height:82px;border:2px solid #ffffffd9;border-radius:50%;
+  background:linear-gradient(180deg,#ffffff4d,#bdeaff57);box-shadow:0 18px 35px #1673a52e,inset 0 0 24px #ffffffbd;backdrop-filter:blur(5px)
+}
+.shigaa-site .sg-showcase::after{
+  content:"";position:absolute;z-index:0;left:4%;top:15%;width:90%;height:69%;border:1px solid #ffffffaa;border-radius:50%;
+  box-shadow:0 0 0 10px #b9e8fa38,0 0 36px #49b8e735;transform:rotate(-20deg)
+}
+.shigaa-site .sg-orbit-wrap{z-index:1;opacity:.55}
+.shigaa-site .sg-orbit{border-color:#48a8d642}
+.shigaa-site .sg-orbit-note,.shigaa-site .sg-orbit-tick,.shigaa-site .sg-plant,.shigaa-site .sg-loose-leaf,.shigaa-site .sg-botanical-note,.shigaa-site .sg-product-caption{display:none}
+.shigaa-site .sg-product-scroll{inset:2% 4% 7%;z-index:2}
+.shigaa-site .sg-product-visual{width:100%;height:100%;display:grid;place-items:center}
+.shigaa-site .sg-main-product.sg-is-pair{position:relative;width:94%;height:88%;object-fit:contain;transform:none;filter:drop-shadow(0 22px 22px #13527b27)}
+.shigaa-site .sg-product-shadow{z-index:2;bottom:13%;left:28%;width:44%;height:22px;background:#175c8225;filter:blur(14px)}
+.shigaa-site .sg-details-wrap{left:auto;right:7%;top:54%;width:43%;z-index:6}
+.shigaa-site .sg-product-card{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none}
+.shigaa-site .sg-product-card::before{display:none}
+.shigaa-site .sg-card-heading{padding:0 0 8px;border:0;color:#1e609c;font-size:11px;letter-spacing:.18em}
+.shigaa-site .sg-card-heading svg{display:none}
+.shigaa-site .sg-product-category{margin-top:0!important;color:#236ba1;font-size:11px!important;letter-spacing:.13em}
+.shigaa-site .sg-product-title{margin:8px 0!important;color:#07569a;font-size:clamp(26px,2.7vw,40px);line-height:1.08}
+.shigaa-site .sg-product-title>span{display:inline}
+.shigaa-site .sg-product-description{min-height:0;margin:7px 0 12px!important;color:#193c66;font-size:15px;line-height:1.5}
+.shigaa-site .sg-price-row{justify-content:flex-start;gap:10px;margin:0 0 14px}
+.shigaa-site .sg-product-price{color:#102e60;font-size:28px}
+.shigaa-site .sg-product-old-price{color:#718ca8}
+.shigaa-site .sg-saving-badge{background:#fff;border-color:#a9dff6;color:#076ca2}
+.shigaa-site .sg-shop-link{width:max-content;min-width:215px;min-height:48px;margin:0;padding:13px 20px!important;background:#0758b7;color:#fff!important;box-shadow:0 12px 26px #0758b72c}
+.shigaa-site .sg-shop-link:hover{background:#06478f}
+.shigaa-site .sg-actions,.shigaa-site .sg-scroll-cue,.shigaa-site .sg-hero-bottom>p{display:none}
+.shigaa-site .sg-hero-bottom{left:auto;right:7%;bottom:15px;z-index:8}
+.shigaa-site .sg-motion-toggle{color:#426b87}
+.shigaa-site .sg-selector-wrap{left:auto;right:7%;top:auto;bottom:6%;width:43%;z-index:8}
+.shigaa-site .sg-selector-label{margin:0 0 8px!important;color:#315e80;font-size:9px!important;letter-spacing:.16em}
+.shigaa-site .sg-selectors{flex-direction:row;gap:7px}
+.shigaa-site .sg-selector{flex:1 1 0;min-width:0;min-height:54px;padding:6px!important;flex-direction:row;justify-content:center;gap:6px;text-align:left;border:1px solid #b7daed!important;border-radius:14px;background:#ffffffa8!important}
+.shigaa-site .sg-selector.is-active{border-color:#138dc5!important;background:#fff!important;box-shadow:0 5px 14px #1671a31b}
+.shigaa-site .sg-thumb{width:30px;height:30px;border-radius:9px;background:#edf8ff}
+.shigaa-site .sg-selector-text{font-size:9px;line-height:1.15;color:#365b77}
+.shigaa-site .sg-selector-text small{display:none}
+.shigaa-site .sg-active-mark{display:none}
+@media(min-width:701px) and (max-width:1100px){
+  .shigaa-site .sg-hero{height:760px;min-height:760px;width:calc(100% - 36px);border-radius:30px}
+  .shigaa-site .sg-editorial{top:14%;right:5%;width:45%}
+  .shigaa-site .sg-editorial h1{font-size:clamp(54px,7vw,76px)}
+  .shigaa-site .sg-editorial .sg-eyebrow{font-size:11px;letter-spacing:.25em}
+  .shigaa-site .sg-showcase{left:0;width:49%}
+  .shigaa-site .sg-details-wrap,.shigaa-site .sg-selector-wrap{right:5%;width:45%}
+  .shigaa-site .sg-details-wrap{top:54%}
+  .shigaa-site .sg-selector-wrap{bottom:7%}
+  .shigaa-site .sg-selector{flex-direction:column;min-height:69px;gap:3px}
+  .shigaa-site .sg-selector-text{font-size:8px}
+}
+@media(max-width:700px){
+  .shigaa-site .sg-hero{display:flex;flex-direction:column;gap:0;width:calc(100% - 20px);height:auto;min-height:0;max-height:none;margin:12px auto 32px;padding:28px 20px 18px;border-radius:25px}
+  .shigaa-site .sg-backdrop{border-radius:inherit;background:linear-gradient(155deg,#fff 0%,#f4fbff 43%,#e6f5ff 100%)}
+  .shigaa-site .sg-backdrop::before{left:-32%;top:6%;width:115%;height:58%;transform:rotate(-22deg)}
+  .shigaa-site .sg-backdrop::after{left:-18%;bottom:35%;width:140%;height:62px;transform:rotate(7deg)}
+  .shigaa-site .sg-editorial,.shigaa-site .sg-showcase,.shigaa-site .sg-details-wrap,.shigaa-site .sg-selector-wrap{position:relative;inset:auto;width:100%}
+  .shigaa-site .sg-editorial{order:1;z-index:5}
+  .shigaa-site .sg-editorial .sg-eyebrow{font-size:10px;letter-spacing:.22em;gap:8px}
+  .shigaa-site .sg-editorial h1{margin-top:20px;font-size:clamp(42px,11vw,66px);line-height:.9;letter-spacing:-.06em}
+  .shigaa-site .sg-editorial .sg-description{margin-top:15px!important;font-size:15px;letter-spacing:.02em}
+  .shigaa-site .sg-showcase{order:2;left:auto;top:auto;height:auto;min-height:0;aspect-ratio:1.12;margin:2px -8px -6px;width:calc(100% + 16px)}
+  .shigaa-site .sg-showcase::before{left:14%;bottom:7%;width:72%;height:14%}
+  .shigaa-site .sg-showcase::after{left:3%;top:11%;width:94%;height:75%}
+  .shigaa-site .sg-product-scroll{inset:0 3% 7%}
+  .shigaa-site .sg-main-product.sg-is-pair{width:97%;height:91%}
+  .shigaa-site .sg-product-shadow{bottom:10%;left:30%;width:40%}
+  .shigaa-site .sg-details-wrap{order:3;margin-top:2px}
+  .shigaa-site .sg-card-heading{font-size:9px}
+  .shigaa-site .sg-product-category{font-size:9px!important}
+  .shigaa-site .sg-product-title{font-size:30px;margin:5px 0!important}
+  .shigaa-site .sg-product-description{font-size:13px;margin:4px 0 8px!important}
+  .shigaa-site .sg-product-price{font-size:24px}
+  .shigaa-site .sg-price-row{gap:7px;margin-bottom:10px}
+  .shigaa-site .sg-shop-link{width:100%;min-height:48px}
+  .shigaa-site .sg-selector-wrap{order:4;bottom:auto;margin-top:19px}
+  .shigaa-site .sg-selector-label{text-align:left;font-size:9px!important}
+  .shigaa-site .sg-selectors{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;padding:1px 0 7px;scrollbar-width:thin}
+  .shigaa-site .sg-selector{flex:0 0 100px;min-height:57px;scroll-snap-align:start}
+  .shigaa-site .sg-selector-text{font-size:9px}
+  .shigaa-site .sg-hero-bottom{position:absolute;right:14px;bottom:12px}
+  .shigaa-site .sg-motion-toggle{font-size:8px!important}
+}
+@media(max-width:360px){
+  .shigaa-site .sg-editorial h1{font-size:40px}
+  .shigaa-site .sg-selector{flex-basis:90px}
+}
+
 /* Editorial hero typography: keep each phrase on one line at every breakpoint. */
 .shigaa-site .sg-editorial h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(52px,5.8vw,84px);line-height:.98;letter-spacing:-.055em;font-variant-ligatures:common-ligatures}
 .shigaa-site .sg-line>span{white-space:nowrap}
